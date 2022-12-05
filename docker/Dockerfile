@@ -9,6 +9,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 #     && apt-get -y clean 
 
 RUN git clone https://github.com/rom1v/autoadb.git
-RUN ls -l autoadb
-RUN cd autoadb/src && cargo build --release
-RUN cd autoadb/src && du -a
+RUN cd autoadb/src && cargo build --release -vv
+
+RUN cd autoadb && ls -l
+RUN cd autoadb/src && ls -l

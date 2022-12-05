@@ -33,8 +33,8 @@ jobs:
           docker create -ti --name xxx-linux-arm-tmp xxx-linux-arm bash
           docker cp xxx-linux-arm-tmp:/home/rust/src/autoadb .
 
-      - uses: actions/upload-artifact@v2
-        with:
-          name: autoadb
-          path: autoadb
+      # - uses: actions/upload-artifact@v2
+      #   with:
+      #     name: autoadb
+      #     path: autoadb
           
